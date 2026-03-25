@@ -14,14 +14,14 @@
 
             <div class="sidebar-logo">
                 <h1>IT Operations</h1>
-                <h2>Dashboard</h2>
+                <h2>Dashboard v1.0</h2>
             </div>
 
             <p class="nav-section">
                 Main
                 <div class="nav-item"><a href="">Overview</a></div>
-                <div class="nav-item"><a href="">Open Tickets</a></div>
-                <div class="nav-item"><a href="">All Tickets</a></div>
+                <div class="nav-item"><a href="">Open tickets</a></div>
+                <div class="nav-item"><a href="">All tickets</a></div>
             </p>
 
             <p class="nav-section-2">
@@ -39,6 +39,43 @@
         </nav>
 
         <main class="content">
+            <header class="top-bar">
+                <h1>Overview</h1>
+                <div class="top-bar-right">
+                    <input type="text" placeholder="Search tickets..." class="search-bar">
+                    <button class="avatar-button">DS</button>
+                </div>
+            </header>
+
+            <section class="stat-grid">
+                <div class="stat-card">
+                    <p class="stat-card-header">Open tickets</p>
+                    <p class="stat-card-number">25</p>
+                    <p class="stat-card-change">-3 since yesterday</p>  
+                </div>
+                <div class="stat-card">
+                    <p class="stat-card-header">Resolved today</p>
+                    <p class="stat-card-number">10</p>
+                    <p class="stat-card-change">+2 vs avg</p>  
+                </div>
+                <div class="stat-card">
+                    <p class="stat-card-header">Devices online</p>
+                    <p class="stat-card-number">200</p>
+                    <p class="stat-card-change-negative">25 offline</p>  
+                </div>
+                <div class="stat-card">
+                    <p class="stat-card-header">Avg. response time</p>
+                    <p class="stat-card-number">1.3h</p>
+                    <p class="stat-card-change">-12 mins vs last week</p>  
+                </div>
+            </section>
+
+            <section class="table-card">
+                <div class="table-header">
+                    <h1>Recent tickets</h1>
+                    <a href="">View all →</a>
+                </div>
+            </section>
             
         </main>
 
