@@ -17,7 +17,56 @@ a{
         /* Sidebar */
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
     width: 220px;
-    background-color: red;
+    background-color: #CCC7BF;
+}
+
+.sidebar-logo {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: solid;
+}
+
+.sidebar-logo > h1 {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.sidebar-logo > h2 {
+    font-size: medium;
+    font-weight: bolder;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: bold; */
+}
+
+.nav-section {
+    padding: 30px 20px 10px 20px;
+}
+
+.nav-section-2 {
+    padding: 30px 20px 10px 20px;
+}
+
+.nav-section-3 {
+    padding: 30px 20px 10px 20px;   
+}
+
+.nav-item {
+    border: 10px;
+    padding: 10px 20px 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-item > a {
+    font-weight: bold;
+
+}
+.nav-item:hover {
+    background-color: green;     
 }
