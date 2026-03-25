@@ -13,6 +13,10 @@ a{
     color:black;
 }
 
+.layout {
+    display: flex;
+}
+
 
         /* Sidebar */
 
@@ -20,8 +24,8 @@ a{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    width: 220px;
-    background-color: #CCC7BF;
+    width: 250px;
+    background-color: #616161;
 }
 
 .sidebar-logo {
@@ -38,10 +42,13 @@ a{
 .sidebar-logo > h2 {
     font-size: medium;
     font-weight: bolder;
+    color: #DBDBDB;
+
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
+    color: #DBDBDB;
     /* font-weight: bold; */
 }
 
@@ -61,12 +68,23 @@ p {
     border: 10px;
     padding: 10px 20px 10px 20px;
     font-family: Arial, Helvetica, sans-serif;
+    color: #DBDBDB;
 }
 
 .nav-item > a {
     font-weight: bold;
-
+    color: #DBDBDB;
 }
+
 .nav-item:hover {
     background-color: green;     
+}
+
+        /* Main */
+
+.content {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
 }
