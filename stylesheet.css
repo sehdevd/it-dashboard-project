@@ -1,4 +1,4 @@
-        /* CSS Reset */
+       /* CSS Reset */
 *{
     list-style: none;
     margin:0;
@@ -9,16 +9,21 @@
     font-size: 16px;
 }
 
-/* a{
-    color:black;
-} */
+:root {
+    --primary-bg-colour: #3B3B3B;
+    --primary-font-colour: #9E9E9E;
+    --primary-border-colour: #616161;
+    --secondary-bg-colour: #242424;
+
+}
 
 .layout {
     display: grid;
     grid-template-columns: 250px 1fr;
     height: 100vh;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: #e5e7eb;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--primary-font-colour);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -26,17 +31,18 @@
         /* Sidebar */
 
 .sidebar {
-    background-color: #242424;
+    background-color: var(--secondary-bg-colour);
     padding: 16px 0;
+    border-right: var(--primary-border-colour) solid 1px;
 }
 
 .sidebar-logo {
     padding: 20px;
-    border-bottom: solid;
-    border-width: 1px;
+    border-bottom: var(--primary-border-colour) solid 1px;
 }
 
 .sidebar-logo > h1 {
+    color: white;
     font-size: x-large;
     font-weight: bolder;
 }
@@ -93,7 +99,9 @@ p {
     align-items: center;
     /* padding: 20px; */
 }
+
 .top-bar > h1 {
+    color: white;
     font-size: 30px;
     font-weight: bold;
 }
@@ -106,13 +114,15 @@ p {
 
 .search-bar {
     padding: 10px;
-    border-radius: 25px;
+    border: var(--primary-border-colour);
+    border-radius: 15px;
 }
-.avatar-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
 
+.avatar-button {
+    width: 45px;
+    height: 45px;
+    border: var(--primary-border-colour);
+    border-radius: 50%;
     background-color: white;
 }
 
@@ -126,14 +136,13 @@ p {
 }
 
 .stat-card {
-    background-color: #242424;
+    background-color: var(--secondary-bg-colour);
     height: 100px;
     width: 200px;
     padding: 20px;
     text-align: center;
-    border: solid;
+    border: var(--primary-border-colour) solid 1px;
     border-radius: 25px;
-    border-width: 1px;
 }
 
 .stat-card-number {
@@ -149,13 +158,12 @@ p {
     color: red;
 }
 
-/* LOOK INTO MODIFIERS */
-
         /* Tickets Box */
 
 .table-card {
     /* display: grid; */
-    background-color: #242424;
+    background-color: var(--secondary-bg-colour);
+    border: var(--primary-border-colour) solid 1px;
     border-radius: 25px;
 }
 
@@ -163,7 +171,14 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    
+}
+
+.table-header > h1 {
+    color: white;
+}
+
+.table-header > a {
+    color: #29B6F6;
 }
 
 .ticket-info {
@@ -175,16 +190,56 @@ th {
     font-size: small;
     font-weight: 900;
     text-align: left;
-    background-color: #3B3B3B;
+    background-color: var(--primary-bg-colour);
     padding: 10px;
-    border-bottom: solid;
+    border-top: var(--primary-border-colour) solid 1px;
+    border-bottom: var(--primary-border-colour) solid 1px;
 }
 
 td{
     padding: 10px;
-    border-bottom: solid 1px;
+    border-bottom: var(--primary-border-colour) solid 1px;
 }
 
 tr:last-child td {
     border: 0px;  
 }
+
+    /* Badges */
+    
+.badge {
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: small;
+}
+
+.badge--low {
+    background-color: #C8E6C9;
+    color: #1B5E20;
+}
+
+.badge--medium {
+    background-color: #FFE0B2;
+    color: #E65100;
+}
+
+.badge--high {
+    background-color: #FFCDD2;
+    color: #B71C1C;
+}
+
+.badge--open {
+    background-color: #BBDEFB;
+    color: #0D47A1;
+}
+
+.badge--in-progress {
+    background-color:#E1BEE7;
+    color: #4A148C;
+}
+
+.badge--resolved {
+    background-color: #C8E6C9;
+    color: #1B5E20;
+}
+
