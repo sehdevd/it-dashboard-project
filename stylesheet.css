@@ -116,6 +116,8 @@ p {
     background-color: white;
 }
 
+        /* Stats */
+
 .stat-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -134,10 +136,6 @@ p {
     border-width: 1px;
 }
 
-/* .stat-card-header {
-
-} */
-
 .stat-card-number {
     font-weight: bold;
     font-size: xx-large;
@@ -153,3 +151,40 @@ p {
 
 /* LOOK INTO MODIFIERS */
 
+        /* Tickets Box */
+
+.table-card {
+    /* display: grid; */
+    background-color: #242424;
+    border-radius: 25px;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+.ticket-info {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    font-size: small;
+    font-weight: 900;
+    text-align: left;
+    background-color: #3B3B3B;
+    padding: 10px;
+    border-bottom: solid;
+}
+
+td{
+    padding: 10px;
+    border-bottom: solid 1px;
+}
+
+tr:last-child td {
+    border: 0px;  
+}
