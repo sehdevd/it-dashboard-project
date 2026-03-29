@@ -69,6 +69,8 @@ p {
 }
 
 .nav-item {
+    display: flex;
+    align-items: center;
     border: 10px;
     padding: 10px 20px 10px 20px;
 }
@@ -78,6 +80,7 @@ p {
     font-size: 14px;
     color: inherit;
     transition: background 0.2s ease;
+    padding-left: 5px;
 }
 
 .nav-item:hover {
@@ -116,6 +119,8 @@ p {
     padding: 10px;
     border: var(--primary-border-colour);
     border-radius: 15px;
+    background-color: var(--secondary-bg-colour);
+    color: var(--primary-font-colour);
 }
 
 .avatar-button {
@@ -123,7 +128,9 @@ p {
     height: 45px;
     border: var(--primary-border-colour);
     border-radius: 50%;
-    background-color: white;
+    background-color: #CCFFFF;
+    color: #6666FF;
+    font-weight: bold;
 }
 
         /* Stats */
@@ -138,7 +145,6 @@ p {
 .stat-card {
     background-color: var(--secondary-bg-colour);
     height: 100px;
-    width: 200px;
     padding: 20px;
     text-align: center;
     border: var(--primary-border-colour) solid 1px;
@@ -148,6 +154,7 @@ p {
 .stat-card-number {
     font-weight: bold;
     font-size: xx-large;
+    color: white;
 }
 
 .stat-card-change {
@@ -166,6 +173,7 @@ p {
     border: var(--primary-border-colour) solid 1px;
     border-radius: 25px;
 }
+
 
 .table-header {
     display: flex;
@@ -205,8 +213,12 @@ tr:last-child td {
     border: 0px;  
 }
 
+tbody tr td:nth-child(2) {
+    color: white;
+}
+
     /* Badges */
-    
+
 .badge {
     padding: 2px 8px;
     border-radius: 12px;
@@ -243,3 +255,27 @@ tr:last-child td {
     color: #1B5E20;
 }
 
+    /* Dots for Priority */
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot--low {
+    background-color: green;
+}
+.dot--medium {
+    background-color: orange;
+}
+.dot--high {
+    background-color: red;
+}
+
+    /* Dots and Badge  */
+tbody tr td:nth-child(4) {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
